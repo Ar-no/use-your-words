@@ -1,5 +1,7 @@
 # UseYourWords
 
+![](https://github.com/Ar-no/use-your-words/.github/workflows/nodejs.yml/badge.svg)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
 ## Development server
