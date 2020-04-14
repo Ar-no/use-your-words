@@ -8,11 +8,15 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { PartyComponent } from './party/party.component';
 import { PartyService } from './party/party.service';
+import { JoinComponent } from './party/join/join.component';
+import { CreateComponent } from './party/create/create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PartyComponent,
+    JoinComponent,
+    CreateComponent,
   ],
   imports: [
     BrowserModule,

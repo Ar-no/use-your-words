@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { PartyComponent } from './party/party.component';
 import { AppComponent } from './app.component';
+import { CreateComponent } from './party/create/create.component';
+import { JoinComponent } from './party/join/join.component';
 
 
 const routes: Routes = [
-  { path: 'new', component: PartyComponent }
+  { path: 'new', component: CreateComponent },
+  { path: 'join', component: JoinComponent }
 ];
 
 @NgModule({

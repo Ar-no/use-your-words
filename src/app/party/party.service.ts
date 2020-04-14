@@ -9,6 +9,10 @@ export class PartyService {
   constructor(private httpClient: HttpClient) { }
 
   getNewCode() {
-    return this.httpClient.get('/party/new');
+    return this.httpClient.get<CodeResponse>('/party/new');
   }
+}
+
+export interface CodeResponse {
+  code: string;
 }

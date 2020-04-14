@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PartyService } from './party.service';
+import { PartyService, CodeResponse} from './party.service';
 
 @Component({
   selector: 'app-party',
@@ -7,14 +7,12 @@ import { PartyService } from './party.service';
   styleUrls: ['./party.component.scss']
 })
 export class PartyComponent implements OnInit {
-  public code:any;
+  public code: string;
 
   constructor(private partyService:PartyService) { }
 
   ngOnInit(): void {
-    this.partyService.getNewCode().subscribe(response => {
-      this.code = response.code;
-    });
+    
   }
 
 }
